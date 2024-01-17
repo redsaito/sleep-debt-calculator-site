@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Debt Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculate your Sleep Debt</h1>
+      <p>How many hours of sleep did you get on Monday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="monday" />
+        <label for="monday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Tuesday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="tuesday" />
+        <label for="tuesday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Wednesday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="wednesday" />
+        <label for="wednesday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Thursday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="thursday" />
+        <label for="thursday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Friday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="friday" />
+        <label for="friday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Saturday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="saturday" />
+        <label for="saturday"></label>
+      </div>
+
+      <p>How many hours of sleep did you get on Sunday?</p>
+      <div>
+        <input type="range" max="10" min="0" id="sunday" />
+        <label for="sunday"></label>
+      </div>
+
+      <button onclick="calculateSleep()">Submit</button>
+    </div>
+    <div class="container">
+      <h2 id="usersleep"></h2>
+      <h2 id="sleepdebt"></h2>
+      <p id="para"></p>
+    </div>
+
+    <script src="./scirpt.js"></script>
+  </body>
+</html>
